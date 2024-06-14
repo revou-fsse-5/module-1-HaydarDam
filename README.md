@@ -11,13 +11,17 @@ This website promotes **Banaspati Indonesian Paradise**, a tour and travel agenc
     **Introduction:** Features a captivating image showcasing Indonesian beauty and a description inviting users to explore the country's landscapes, culture, and adventures. A call-to- action button "Explore Our Destinations - Package Tour" tempts visitors to delve deeper.
     **Why Choose Us:** Highlights the company's strengths with a bulleted list mentioning curated tours, experienced guides, unforgettable experiences, and exceptional customer service.
 5. **Popular Destinations:** Showcases three destinations with captivating images and descriptions:
-        * Tonya Dewata - Bali: Emphasizes stunning beaches, vibrant culture, ancient temples, and lush rice paddies.
+
+   **Tonya Dewata - Bali**: Emphasizes stunning beaches, vibrant culture, ancient temples, and lush rice paddies.
+   
    ![Alt text](https://res.klook.com/image/upload/q_85/c_fill,w_1360/v1654586251/blog/wsnqunszlajd5ypjo29l.webp)
 
-        * Reptilian District - Komodo National Park: Entices with encounters with majestic Komodo dragons and breathtaking landscapes.
+   **Reptilian District - Komodo National Park**: Entices with encounters with majestic Komodo dragons and breathtaking landscapes.
+   
    ![Alt text](https://cdn0-production-images-kly.akamaized.net/1zKr7iJWTS89nUA5IDZM0fizQzs=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2845460/original/065746700_1562308699-kadalbesarcov.jpg)
    
-        * Altaria Vista - Borobudur Temple: Unveils the mysteries of the ancient Borobudur Temple, a UNESCO World Heritage Site.
+   **Altaria Vista - Borobudur Temple**: Unveils the mysteries of the ancient Borobudur Temple, a UNESCO World Heritage Site.
+
    ![Alt text](https://authentic-indonesia.com/wp-content/uploads/2020/11/borobudur-temple.jpg)
 
 7. **Contact Form:** Encourages users to "Take Your Seat!"  This section includes a form for visitors to provide their name, email, message, gender (radio buttons: Male/Female), preferred travel package (checkboxes for Bali, Komodo National Park, and Borobudur Temple), travel date, and travel time. Finally, a "Send Message" button allows them to submit their inquiries.
@@ -29,6 +33,7 @@ This website promotes **Banaspati Indonesian Paradise**, a tour and travel agenc
 ---
 
 **Structure and Content:**
+
 ![alt text](<foto/foto 1 head.png>)
 * **Document type declaration (DOCTYPE):** `<!DOCTYPE html>` -  This line specifies the document type as HTML5.
 * **Head section (`<head>`):** Contains metadata about the document, including:
@@ -39,6 +44,7 @@ This website promotes **Banaspati Indonesian Paradise**, a tour and travel agenc
     * **Stylesheet link (`<link rel="stylesheet" href="style.css">`):**  Links an external stylesheet file (`style.css`) that likely defines the visual appearance of the elements.
 
 **Body Section (`<body>`):** Contains the visible content of the webpage:
+
 ![alt text](<foto/foto 2 navigasi.png>)
 
 ![alt text](<foto/foto 3 main & section pengenalan travel.png>)
