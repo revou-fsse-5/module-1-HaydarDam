@@ -1,4 +1,5 @@
 # Indonesian Paradise - Tour & Travel Website
+![Alt text](https://static.vecteezy.com/system/resources/thumbnails/003/088/519/small_2x/indonesia-landmark-background-concept-free-vector.jpg)
 
 This website promotes **Banaspati Indonesian Paradise**, a tour and travel agency specializing in Indonesian adventures.
 
@@ -11,9 +12,15 @@ This website promotes **Banaspati Indonesian Paradise**, a tour and travel agenc
     **Why Choose Us:** Highlights the company's strengths with a bulleted list mentioning curated tours, experienced guides, unforgettable experiences, and exceptional customer service.
 5. **Popular Destinations:** Showcases three destinations with captivating images and descriptions:
         * Tonya Dewata - Bali: Emphasizes stunning beaches, vibrant culture, ancient temples, and lush rice paddies.
+   ![Alt text](https://res.klook.com/image/upload/q_85/c_fill,w_1360/v1654586251/blog/wsnqunszlajd5ypjo29l.webp)
+
         * Reptilian District - Komodo National Park: Entices with encounters with majestic Komodo dragons and breathtaking landscapes.
+   ![Alt text](https://cdn0-production-images-kly.akamaized.net/1zKr7iJWTS89nUA5IDZM0fizQzs=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2845460/original/065746700_1562308699-kadalbesarcov.jpg)
+   
         * Altaria Vista - Borobudur Temple: Unveils the mysteries of the ancient Borobudur Temple, a UNESCO World Heritage Site.
-6. **Contact Form:** Encourages users to "Take Your Seat!"  This section includes a form for visitors to provide their name, email, message, gender (radio buttons: Male/Female), preferred travel package (checkboxes for Bali, Komodo National Park, and Borobudur Temple), travel date, and travel time. Finally, a "Send Message" button allows them to submit their inquiries.
+   ![Alt text](https://authentic-indonesia.com/wp-content/uploads/2020/11/borobudur-temple.jpg)
+
+7. **Contact Form:** Encourages users to "Take Your Seat!"  This section includes a form for visitors to provide their name, email, message, gender (radio buttons: Male/Female), preferred travel package (checkboxes for Bali, Komodo National Park, and Borobudur Temple), travel date, and travel time. Finally, a "Send Message" button allows them to submit their inquiries.
 
 * **Footer:** Displays the company's copyright information and a "Contact Us" button styled with blue background and white text for easy access.
 
