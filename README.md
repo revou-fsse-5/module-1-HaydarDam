@@ -1,6 +1,6 @@
 # Indonesian Paradise - Tour & Travel Website
 
-[Banaspati Indonesian Paradise](https://module-1-haydar-1myrf96j7-haydars-projects-d273c07f.vercel.app/)
+[Banaspati Indonesian Paradise](https://module-1-haydar-dam.vercel.app/)
 
 This website promotes **Banaspati Indonesian Paradise**, a tour and travel agency specializing in Indonesian adventures.
 
