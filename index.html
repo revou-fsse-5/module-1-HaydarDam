@@ -3,32 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indonesian Paradise - Tour & Travel</title>
-    <link rel="icon" href="foto/burung.gif">
+    <meta name="description" content="Banaspati Nusa Tour and Travel">
+    <meta name="author" content="Haydar Dam">
+    <title>Banaspati Nusa - Tour & Travel</title>
+    <link rel="icon" href="Aset/gambar/burung.gif">
+    
+    <!-- STYLE CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- JAVASCRIPT FOR INTERACTIVITY -->
+    <script src="script.js" defer></script>
 </head>
-
-
-
-
 <body>
     <header>
-        <h1>Banaspati Indonesian Paradise</h1>
-        <h2>Tour & Travel</h2>
+        <div class="header-left-session">
+            <h1 class="web-title">Banaspati Nusa
+            </h1>
+        </div>
+        <div class="header-right-session">
+            <button class="search-btn" id="searchBtn">
+                <i class="fas fa-search">
+                </i>
+            </button>
+            <button class="burger-btn" id="burgerBtn">
+                <i class="fas fa-bars">
+                </i>
+            </button>
+            <nav class="header-navigation" id="headerNavigation">
+                <button class="close-btn" id="closeBtn">
+                    <i class="fas fa-times">
+                    </i>
+                </button>
+                <ul class="nav-list">
+                    <li class="nav-home-container">
+                        <i class="fas fa-home">
+                        </i>
+                        <a href="/Haydar/Aset/ikon/home-ikon.png" class="nav-home">Home
+                        </a>
+                    </li>
+                    <li class="nav-destinations-container">
+                        <i class="fas fa-map-marker-alt">
+                        </i>
+                        <a href="https://pbs.twimg.com/media/E5i7zRkVcAAjgQr.jpg" class="nav-destinations">Destinations
+                        </a>
+                    </li>
+                    <li class="nav-tours-container">
+                        <i class="fas fa-route">
+                        </i>
+                        <a href="/tours" class="nav-tours">Tours
+                        </a>
+                    </li>
+                    <li class="nav-about-container">
+                        <i class="fas fa-info-circle">
+                        </i>
+                        <a href="/about" class="nav-about">About Us
+                        </a>
+                    </li>
+                    <li class="nav-contact-container">
+                        <i class="fas fa-phone">
+                        </i>
+                        <a href="/contact" class="nav-contact">Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-nav" id="searchNav">
+            <form class="search-form" id="searchForm" role="search">
+                <input type="search"  class="search-input" id="searchInput" aria-label="Search Destination" placeholder="Find Destination">
+                <button type="submit" class="btn-find" aria-label="Find Destination">find
+                </button>
+            </form>
+        </div>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Tours</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-
-
     <main>
         <section class="pengenalan">
             <img src="https://static.vecteezy.com/system/resources/thumbnails/003/088/519/small_2x/indonesia-landmark-background-concept-free-vector.jpg" width="500" height="250" alt="Indonesian Paradise - Explore the Beauty">
@@ -48,10 +98,14 @@
             </ul>
         </section>
 
-
+        <section class="popular-destinations">
+            <div class="container">
+                <h2>Popular Destinations</h2>
+            </div>
+        </section>
 
         <section class="tujuan">
-            <h2>Popular Destinations</h2>
+           
             <div class="tujuan-satu">
                 <img src="https://res.klook.com/image/upload/q_85/c_fill,w_1360/v1654586251/blog/wsnqunszlajd5ypjo29l.webp" width="500" height="250" alt="Destination 1">
                 <h3>Tonya Dewata - Bali</h3>
@@ -80,52 +134,49 @@
                     <label for="name">Name:</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
                 </div>
-
+    
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
                 </div>
-
+    
                 <div class="form-group">
                     <label for="message">Message:</label>
                     <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
                 </div>
-                
+    
                 <div class="form-group">
-                    <label>Gen:</label>
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+    
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label>Tour Package:</label>
+                    <div class="checkbox-group">
+                        <div>
+                            <input type="checkbox" id="interest1" name="interests[]" value="adventure">
+                            <label for="interest1">Tonya Dewata (Bali)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="interest2" name="interests[]" value="culture">
+                            <label for="interest2">Reptilian District (Komodo National Park)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="interest3" name="interests[]" value="relaxation">
+                            <label for="interest3">Altaria Vista (Borobudur Temple)</label>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="form-group">
-                    <input class="form-control" type="radio" id="male" name="gen" value="male">
-                    <label class="form-control" for="male">Male</label>
-                </div>
-                
-                <div class="form-group">
-                    <input class="form-control" type="radio" id="female" name="gen" value="female">
-                    <label class="form-control" for="female">Female</label>
-                </div>
 
                 <div class="form-group">
-                    <label for="Package">Package Plan:</label>
-                </div>
-
-                <div class="form-group">
-                    <input class="form-control" type="checkbox" id="interest1" name="interests[]" value="adventure">
-                    <label class="form-control" for="interest1">Tonya Dewata (Bali)</label>
-                </div>
-                
-                <div class="form-group">
-                    <input class="form-control" type="checkbox" id="interest2" name="interests[]" value="culture">
-                    <label class="form-control" for="interest2">Reptilian District (Komodo National Park)</label>
-                </div>
-                
-                <div class="form-group">
-                    <input class="form-control" type="checkbox" id="interest3" name="interests[]" value="relaxation">
-                    <label class="form-control" for="interest3">Altaria Vista (Borobudur Temple)</label>
-                </div>
-
-                <div class="form-group">
-                    <label for="travelDate">Preferred Travel Date:</label>
+                    <label for="travelDate">Travel Date:</label>
                 </div>
 
                 <div class="form-group">
@@ -133,7 +184,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="travelDate">Preferred Travel Time:</label>
+                    <label for="travelDate">Travel Time:</label>
                 </div>
 
                 <div class="form-group">
@@ -150,36 +201,39 @@
                 </div>
             </form>
         </section>
+
+
+
+
+
+
     </main>
-</body>
-
-
-    
     <footer>
-        <div>
-            <p>&copy; Copyright <b>Banaspati Indonesian Paradise</b>. All rights reserved.</p>
-        </div>
-      
-        <div class="client-support" style="text-align: center;">
-            <p>Need help? :</p>
-            <button style=" display: inline-block;
-                            padding: 10px 20px;
-                            font-size: 16px;
-                            cursor: pointer;
-                            text-align: center;
-                            text-decoration: none;
-                            outline: none;
-                            border: none;
-                            border-radius: 5px;
-                            background-color: blue; /* Warna biru */
-                            color: white; /* Warna teks putih */
-                            transition: background-color 0.3s;
-                          ">Contact Us
-            </button>
-        </div>
-    </footer>
+        <p class="footer-text">Social Media
+        </p>
+        <div class="social-media-container">
+            <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook-f">
+                </i>
+            </a>
+            <a href="#" aria-label="Tiktok">
+                <i class="fa-brands fa-tiktok">
+                </i>
+            </a>
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram">
+                </i>
+            </a>
+            <a href="#" aria-label="X">
+                <i class="fa-brands fa-x">
+                </i>
+            </a>
 
-    <div class="bird-icon">
-        <img src="foto/burung.gif" alt="Bird Icon">
-    </div>
+        </div>
+
+
+
+
+    </footer>
+</body>
 </html>

@@ -1,248 +1,346 @@
+/* Reset CSS */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-align: center;
-    box-sizing: border-box; max-width: auto; max-height: fit-content;
+    box-sizing: border-box;
+    max-height: auto;
 }
 
-
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ffe602;
+    background-color: lightcyan;
     color: #333;
-    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header styles */
 header {
-    background-color: #333;
-    color: #ffe602;
-    position: fixed;
-    width: 100%;
-    padding: 0;
+    background-color: green;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1,
-header h2 {
-    margin: 0;
+.header-left-session {
+    padding-left: 20px;
 }
 
-nav {
-    background-color: #444;
-    padding: 0.5rem 0;
+.header-right-session {
+    padding-right: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.web-title {
+    font-size: 24px;
 }
 
-nav ul li {
-    display: inline-block;
+.search-btn, .burger-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: yellow;
     margin-right: 10px;
 }
 
-nav ul li a {
-    display: flex;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.5s ease;
+.header-navigation {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    padding: 10px;
+    display: none;
 }
 
-nav ul li a:hover {
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-bottom: 10px;
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.nav-list li a:hover {
     background-color: #555;
 }
 
-
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: flex; 
-        position: static;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-        z-index: 999;
-    }
-
-    nav ul {
-        display: flex; 
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        width: 100%;
-        text-align: center;
-        padding-top: 10px;
-    }
-
-    nav ul li {
-        display: flex;
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        padding: 10px;
-    }
-
-    nav.active ul {
-        display: flex; 
-    }
+.search-nav.active {
+    display: block;
 }
 
+.search-nav {
+    position: absolute;
+    top: 5%;
+    right: 20px;
+    display: none;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.btn-find {
+    background-color: blue;
+    color: yellow;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Main section styles */
 main {
     padding: 20px;
-    text-align: justify;
-}
-
-.pengenalan,
-.why-choose-us,
-.tujuan,
-.contact-form {
-    margin-bottom: 20px;
-}
-
-.pengenalan img,
-.tujuan-satu img,
-.tujuan-dua img,
-.tujuan-tiga img {
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    border-radius: 5%;
-    margin: 0 auto 10px; 
 }
 
 .pengenalan {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 2cqmax;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pengenalan img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 55%;
+    box-shadow: 0 0 12px grey;
+}
+
+.btn {
+    display: inline-block;
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: blue;
 }
 
 .why-choose-us {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+.why-choose-us h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.why-choose-us ul {
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.why-choose-us ul li {
+    margin-bottom: 10px;
+}
+
+.popular-destinations {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .tujuan {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat tiga kolom dengan lebar yang sama */
+    gap: 20px; /* Spasi antara kolom */
+    margin-bottom: 30px;
 }
 
-.tujuan-satu,
-.tujuan-dua,
-.tujuan-tiga {
+.tujuan-satu, .tujuan-dua, .tujuan-tiga {
+    text-align: center;
     margin-bottom: 20px;
-    padding: 20px;
-    background-color: #f7f8e6;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(44, 0, 240, 0.1);
+    padding: 10px;
+    background-color: #f0f59d;
+    border-radius: 10px;
+    box-shadow: 0 0 11px yellowgreen;
 }
 
-.tujuan-satu img,
-.tujuan-dua img,
-.tujuan-tiga img {
-    margin-bottom: 10px;
+.tujuan-satu img, .tujuan-dua img, .tujuan-tiga img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 13px grey;
+}
+
+.tujuan-satu h3, .tujuan-dua h3, .tujuan-tiga h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .contact-form {
-    background-color: #58ffff;
+    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: greenyellow;
+    border-radius: 10px;
+    box-shadow: 0 0 11px yellowgreen;
 }
 
-.contact-form form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.contact-form .form-group {
+.form-group {
     margin-bottom: 15px;
 }
 
-.contact-form label {
-    display: flex;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea,
-.contact-form input[type="date"],
-.contact-form input[type="time"],
-.contact-form input[type="range"],
-.contact-form input[type="checkbox"] {
+.form-control {
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.contact-form .btn-primary {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    cursor: pointer;
+    background-color: lightyellow;
     border-radius: 5px;
-    font-size: 16px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat tiga kolom dengan lebar yang sama */
+    gap: 10px; /* Spasi antara kolom */
 }
 
-.client-support button {
+.checkbox-group div {
     display: flex;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.btn-primary {
+    background-color: red;
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    background-color: blue;
-    color: white;
-    transition: background-color 0.3s;
-}
-
-.client-support button:hover {
-    background-color: #0056b3;
-}
-
-.bird-icon {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1;
-}
-
-.bird-icon img {
-    width: 80px;
-    height: auto;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    border-radius: 5px;
 }
 
-.bird-icon img:hover {
-    transform: scale(1.4);
+.btn-primary:hover {
+    background-color: blue;
+}
+
+/* Footer styles */
+footer {
+    background-color: green;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-text {
+    margin-bottom: 10px;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-container a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-media-container a:hover {
+    color: #fcfc00;
+    transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+    .tujuan-satu,
+    .tujuan-dua,
+    .tujuan-tiga {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tujuan {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .pengenalan,
+    .why-choose-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; /* Spasi antara dua kolom */
+        align-items: center; /* Menyamakan ketinggian item */
+    }
+}
+
+/* Stack items into one column for smaller screens */
+@media (max-width: 767px) {
+    .pengenalan,
+    .why-choose-us {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
+/* Hide navigation by default */
+.header-navigation {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background-color: blue;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    z-index: 10;
+    text-align: center; /* Teks menjadi center */
+}
+
+/* Style for active navigation */
+.header-navigation.active {
+    display: block;
+}
+
+/* Transition effect for smooth animation */
+.header-navigation {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Push header down when navigation is active */
+.header-navigation.active {
+    transform: translateX(0);
+}
+
+/* Hide the close button */
+.close-btn {
+    display: none;
 }
