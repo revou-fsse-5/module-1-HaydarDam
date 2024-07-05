@@ -78,3 +78,64 @@ This website promotes **Banaspati Indonesian Paradise**, a tour and travel agenc
 * **Submit button (`<button type="submit">`):**  Triggers the form submission process when clicked.
 
 
+___
+___
+
+
+# Module 2
+
+sign up vercel account
+![alt text](<pic 1.png>)
+
+choose a github repository to deploy as website on vercel
+![alt text](<pic 2.png>)
+
+connect vercel account to github account
+![alt text](<pic 3.png>)
+
+fork module 2
+![alt text](<pic 4.png>)
+
+input domain name and click add domain
+![alt text](<pic 5.png>)
+
+import from github
+![alt text](<pic 6.png>)
+
+deploy new project
+![alt text](<pic 7.png>)
+
+wew
+![alt text](<pic 8.png>)
+
+continue to dashboard
+![alt text](<pic 9.png>)
+
+manage domain
+![alt text](<pic 10.png>)
+
+buy a custom domain
+![alt text](<pic 11.png>)
+
+setting domain vercel
+![alt text](<pic 12.png>)
+
+edit domain vercel
+![alt text](<pic 13.png>)
+
+invalid huhu
+![alt text](<pic 14.png>)
+
+set nameserver
+![alt text](<pic 15.png>)
+
+change name server from vercel
+![alt text](<pic 16.png>)
+
+sip
+![alt text](<pic 17.png>)
+
+wehe
+![alt text](<pic 18.png>)
+
+[BANASPATI.FUN](https://banaspati.fun/)
